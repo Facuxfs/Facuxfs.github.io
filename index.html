@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Register Page</title>
+
+  <!--Bootstrap and FontAwesome CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+  <!--Custom styles-->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-center h-100">
+      <div class="card">
+        <div class="card-header">
+          <h3>Registro</h3>
+          <div class="d-flex justify-content-end social_icon">
+            <!-- Simulated Google and Facebook buttons -->
+            <span><a href="home.html" onclick="alert('Simulación de registro con Google')"><i class="fab fa-google"></i></a></span>
+            <span><a href="#" onclick="alert('Simulación de registro con Facebook')"><i class="fab fa-facebook"></i></a></span>
+          </div>
+        </div>
+        <div class="card-body">
+
+          <form onsubmit="registerUser(); return false;">
+            <!-- Campos del formulario de registro -->
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="Usuario" required>
+            </div>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+              </div>
+              <input type="email" class="form-control" placeholder="Correo electrónico" required>
+            </div>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+              </div>
+              <input type="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Registro" class="btn float-right login_btn">
+            </div>
+          </form>
+          
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-center">
+            <a href="#">¿Ya tienes una cuenta? Inicia sesión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Bootstrap and jQuery JS-->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    // Función para registrar al usuario
+    function registerUser() {
+      alert('Registro simulado exitoso');
+      localStorage.setItem('isRegistered', 'true');
+      updateNavbar();
+    }
+  
+    // Función para actualizar el navbar en función del estado de registro
+    function updateNavbar() {
+      const isRegistered = localStorage.getItem('isRegistered') === 'true';
+      document.getElementById('register-link').style.display = isRegistered ? 'none' : 'block';
+      document.getElementById('profile-link').style.display = isRegistered ? 'block' : 'none';
+    }
+  
+    // Ejecuta la función al cargar la página para reflejar el estado correcto
+    document.addEventListener('DOMContentLoaded', updateNavbar);
+  </script>
+</body>
+</html>
