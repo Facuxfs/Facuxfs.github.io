@@ -1,73 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <title>Login Page</title>
-
-    <!-- Bootstrap 4 CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" type="text/css" href="home.css">
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Login Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap 4 CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
-    <!-- Navbar -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="OfertasDestacadas.html">Destacadas</a>
+            <a class="nav-link" href="OfertasDestacadas.html">Destacadas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="Ofertas.html">Ofertas</a>
+            <a class="nav-link" href="Ofertas.html">Ofertas</a>
           </li>
-          </ul>
-        </div>
-        </div>
-      </nav>
-      </header>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  <!-- Bootstrap Bundle with Popper.js -->
+
 
     <!-- Main Content -->
 <div class="container-fluid mt-4">
     <div class="row">
       <!-- Panel de Información Personal -->
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card mb-3">
           <div class="card-header bg-white">
             <h3 class="card-title">INFORMACION PERSONAL</h3>
           </div>
           <div class="card-body">
             <div class="row">
-              <div class="col-md-4 text-center">
-                <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-fluid rounded-circle">
+              <div class="col-md-3 text-center">
+                <img alt="User Pic" src="images/perfil.webp" class="img-fluid rounded-circle">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-9">
                 <table class="table table-striped">
                   <tbody>
                     <tr><td>CODIGO:</td><td>Programming</td></tr>
-                    <tr><td>NOMBRE:</td><td>06/23/2013</td></tr>
-                    <tr><td>DOCUMENTO:</td><td>01/24/1988</td></tr>
+                    <tr><td>NOMBRE:</td><td>Juan Perez</td></tr>
+                    <tr><td>DOCUMENTO:</td><td>40.123.456</td></tr>
                     <tr><td>Email</td><td><a href="mailto:info@support.com">info@support.com</a></td></tr>
-                    <tr><td>NUMERO TELEFONICO:</td><td>123-4567-890 (Landline)</td></tr>
+                    <tr><td>NUMERO TELEFONICO:</td><td>123-4567-890S</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -83,7 +84,7 @@
           <div class="card-body">
             <table class="table table-user-information">
               <tbody>
-                <tr><td>FOTO DOCUMENTO:</td><td>Programming</td></tr>
+                <tr><td>PROFESIONAL:</td><td>Programming</td></tr>
                 <tr><td>Certificado de Notas/ICFES:</td><td>06/23/2013</td></tr>
                 <tr><td>Certificado de residencia:</td><td>01/24/1988</td></tr>
                 <tr><td>Recibo Publico:</td><td>Male</td></tr>
@@ -101,9 +102,9 @@
           <div class="card-body">
             <table class="table table-user-information">
               <tbody>
-                <tr><td>Contraseña:</td><td>Programming</td></tr>
-                <tr><td>Nueva Contraseña:</td><td>06/23/2013</td></tr>
-                <tr><td>Confirmar Nueva Contraseña:</td><td>01/24/1988</td></tr>
+                <tr><td>Contraseña:</td><td>Pass1234</td></tr>
+                <tr><td>Nueva Contraseña:</td><td>NewPass</td></tr>
+                <tr><td>Confirmar Nueva Contraseña:</td><td>NewPass</td></tr>
               </tbody>
             </table>
             <a href="#" class="btn btn-primary">Cambiar Contraseña</a>
@@ -113,31 +114,31 @@
   
       <!-- Pestañas de Proyecto -->
       <div class="col-md-8">
-        <div class="card h-100"> <!-- Clase h-100 para que ocupe toda la altura -->
-          <div class="card-header bg-white">
-            <h3 class="card-title">PROYECTOS</h3>
+        <div class="card h-80"> <!-- Clase h-100 para que ocupe toda la altura -->
+          <div class="card-header">
+            <h3 class="card-title">MIS POSTULACIONES : </h3>
           </div>
           <div class="card-body">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-                   aria-controls="nav-home" aria-selected="true">Project Tab 1</a>
+                   aria-controls="nav-home" aria-selected="true">En espera</a>
                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                   aria-controls="nav-profile" aria-selected="false">Project Tab 2</a>
+                   aria-controls="nav-profile" aria-selected="false">Visualizadas</a>
                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-                   aria-controls="nav-contact" aria-selected="false">Project Tab 3</a>
+                   aria-controls="nav-contact" aria-selected="false">Finalizadas</a>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <table class="table table-bordered mt-3">
                   <thead>
-                    <tr><th>Project Name</th><th>Employer</th><th>Awards</th></tr>
+                    <tr><th>Postulacion</th><th>Fecha</th><th>Estado</th></tr>
                   </thead>
                   <tbody>
-                    <tr><td><a href="#">Work 1</a></td><td>Doe</td><td>john@example.com</td></tr>
-                    <tr><td><a href="#">Work 2</a></td><td>Moe</td><td>mary@example.com</td></tr>
-                    <tr><td><a href="#">Work 3</a></td><td>Dooley</td><td>july@example.com</td></tr>
+                    <tr><td><a href="#">Desarrollador Fullstack Senior</a></td><td>Noviembre 13, 2024</td><td>En espera</td></tr>
+                    <tr><td><a href="#">Desarrollador Mobile</a></td><td>Octubre 25, 2024</td><td>Visualizado</td></tr>
+                    <tr><td><a href="#">Arquitecto de Software Cloud</a></td><td>Octubre 31, 2024</td><td>Rechazado</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -152,7 +153,7 @@
   
 
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   
 </body>
 
 </html>
